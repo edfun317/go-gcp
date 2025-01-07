@@ -8,6 +8,7 @@ import (
 
 // Execute handles the main flow of connecting to a GKE cluster and executing commands
 func (a *AccessPods) Execute() {
+
 	// Initialize by reading cluster configurations
 	configs, err := readConfigurations(a.FilePath)
 	if err != nil {
