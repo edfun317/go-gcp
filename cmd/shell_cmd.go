@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/edfun317/go-gcp/shell/podshell"
 	"github.com/spf13/cobra"
 )
 
@@ -30,11 +31,14 @@ var shellCmd = &cobra.Command{
 		}
 
 		// Process the file
-		fmt.Printf("Processing file: %s\n", filePath)
+		fmt.Printf("loaded file: %s\n", filePath)
 
 		// Handle additional arguments
 		if len(args) > 0 {
 			fmt.Printf("Additional arguments: %v\n", args)
 		}
+
+		access := podshell.NewAccessPods(filePath)
+		access.Execute()
 	},
 }
