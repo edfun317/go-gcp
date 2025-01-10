@@ -1,4 +1,4 @@
-package shell
+package podshell
 
 // CommandType 定義可用的命令類型
 type CommandType int

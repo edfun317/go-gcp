@@ -1,4 +1,4 @@
-package shell
+package podshell
 
 import (
 	"bufio"
@@ -18,7 +18,7 @@ func connectToGKE(config ClusterConfig) error {
 }
 
 // getPods retrieves the list of pods in the specified namespace
-// Command: kubectl get pods -n namespace --no-headers
+// Command: kubectl get pods -n bi-rpa-pd-pnc --no-headers
 func getPods(namespace string) ([]string, error) {
 	// Execute kubectl command to get pod list
 	cmd := exec.Command("kubectl", "get", "pods", "-n", namespace, "--no-headers")
