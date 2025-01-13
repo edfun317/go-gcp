@@ -8,6 +8,7 @@ const (
 	ConnectPod
 	ShowLogs
 	DescribePod
+	ShowEnv
 	Exit
 )
 
