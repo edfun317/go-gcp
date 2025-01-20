@@ -33,6 +33,14 @@ type ShellCommand struct {
 	Action      func(namespace string) error
 }
 
+type DBConfig struct {
+	Env     string
+	Host    string
+	Port    string
+	Purpose string
+	DBName  string
+}
+
 // AccessPods is the main structure for handling pod access
 type AccessPods struct {
 	FilePath string // Path to the configuration file
