@@ -9,6 +9,9 @@ const (
 	ShowLogs
 	DescribePod
 	ShowEnv
+	AdjustCPU
+	AdjustMemory
+	ScaleDeployment
 	Exit
 )
 

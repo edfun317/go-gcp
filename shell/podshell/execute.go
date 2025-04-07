@@ -80,6 +80,9 @@ func (a *AccessPods) commandLoop(config ClusterConfig) {
 		ShowLogs,
 		DescribePod,
 		ShowEnv,
+		AdjustCPU,
+		AdjustMemory,
+		ScaleDeployment,
 		Exit,
 	}
 
