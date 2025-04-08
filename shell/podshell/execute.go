@@ -83,6 +83,7 @@ func (a *AccessPods) commandLoop(config ClusterConfig) {
 		AdjustCPU,
 		AdjustMemory,
 		ScaleDeployment,
+		PortForward,
 		Exit,
 	}
 

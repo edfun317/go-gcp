@@ -12,6 +12,7 @@ const (
 	AdjustCPU
 	AdjustMemory
 	ScaleDeployment
+	PortForward
 	Exit
 )
 
